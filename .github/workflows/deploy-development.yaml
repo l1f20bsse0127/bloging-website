@@ -28,7 +28,7 @@ jobs:
         run: npm install parcel-bundler
 
       - name: Build Website
-        run: npx parcel build index.html --out-dir dist
+        run: npx parcel build index.html styles/style.css --out-dir dist
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
